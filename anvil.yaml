@@ -1,9 +1,20 @@
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+package_name: Instantsearch
 allow_embedding: false
-package_name: M3_App_1
-name: M3 App 1
-startup_form: Form1
-renamed: true
+name: Instantsearch
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-dependencies: []
-services: []
+metadata: {title: InstantSearch, description: Discover Peope with their faces with our help,
+  logo_img: 'https://i.pinimg.com/564x/28/d3/e9/28d3e91741f144e07f98e71030cb0505.jpg'}
+startup_form: Form1
+db_schema:
+  our_data:
+    client: none
+    server: full
+    columns: []
+    title: Our data
+renamed: true

@@ -7,8 +7,54 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: label_1
+    properties: {text: Let's Discover., spacing_above: none, font_size: 25, font: '',
+      bold: true, italic: false, underline: false}
+    type: Label
+    layout_properties: {grid_position: 'WAKAXQ,CRIATK'}
+    data_bindings:
+    - {property: icon, code: 'self.item[''https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/0ccf41cb-91df-438f-1887-41bdc89c8400/public'']',
+      writeback: false}
+  - name: label_2
+    properties: {text: Your Name}
+    type: Label
+    layout_properties: {grid_position: 'DMOENX,DIMXCZ'}
+  - name: text_box_1
+    properties: {placeholder: Name}
+    type: TextBox
+    layout_properties: {grid_position: 'HELVHP,SSQFBU'}
+  - name: label_5
+    properties: {text: Your Gmail, spacing_above: large}
+    type: Label
+    layout_properties: {grid_position: 'TTZHPE,BAKNFM'}
+  - name: text_box_3
+    properties: {placeholder: Gmail}
+    type: TextBox
+    layout_properties: {grid_position: 'DYIGWQ,GCUFML'}
+  - name: label_3
+    properties: {text: 'Your Insta ID ', spacing_above: large}
+    type: Label
+    layout_properties: {grid_position: 'FDKZFN,FEBSYI'}
+  - name: text_box_2
+    properties: {placeholder: Username}
+    type: TextBox
+    layout_properties: {grid_position: 'QAWVVK,AILJYY'}
+  - name: label_4
+    properties: {text: Upload your profile photo., spacing_above: large}
+    type: Label
+    layout_properties: {grid_position: 'CLPMLF,SEVXTB'}
+  - name: file_loader_1
+    properties: {}
+    type: FileLoader
+    layout_properties: {grid_position: 'IMRJAN,AKSASC'}
+  - name: button_1
+    properties: {text: Ready to Discover!, border: '', background: ''}
+    type: Button
+    layout_properties: {grid_position: 'HPYPNO,RQXSJN'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components: []
