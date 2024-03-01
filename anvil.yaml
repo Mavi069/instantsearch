@@ -17,17 +17,17 @@ db_schema:
     client: none
     server: full
     columns:
+    - name: gmail
+      admin_ui: {width: 200, order: 1}
+      type: simpleObject
+    - name: username
+      admin_ui: {width: 200, order: 2}
+      type: simpleObject
     - name: name
       admin_ui: {order: 0, width: 200}
       type: simpleObject
-    - name: gmail
-      admin_ui: {order: 1.5, width: 200}
-      type: simpleObject
-    - name: username
-      admin_ui: {order: 2.25, width: 200}
-      type: simpleObject
     - name: propic
-      admin_ui: {width: 200, order: 3.25}
+      admin_ui: {width: 200, order: 3}
       type: simpleObject
     title: ourdata
 renamed: true
