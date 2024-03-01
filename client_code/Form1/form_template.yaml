@@ -52,9 +52,10 @@ components:
     properties: {text: Ready to Discover!, border: '', background: ''}
     type: Button
     layout_properties: {grid_position: 'HPYPNO,RQXSJN'}
-    event_bindings: {click: button_1_click}
+    event_bindings: {click: button_1_click, show: button_1_show}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
   components: []
+custom_component: true
