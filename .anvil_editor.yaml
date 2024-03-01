@@ -1,9 +1,10 @@
 unique_ids:
   forms:
-    Form1: 4SODHYJYC6OWUG2C25HP7KCA5P23WQ2N
-  modules:
-    Module1: '1709314524221561174846325.0809'
-  server_modules: {}
+    Register: 4SODHYJYC6OWUG2C25HP7KCA5P23WQ2N
+    Register.Discover: '1709318667682715537914424.2473'
+  modules: {}
+  server_modules:
+    ServerModule1: '1709316525183617339939351.2728'
   assets:
     standard-page.html: NMPN24RETUG4L2YHL6FNYX3VXIFZJB2S
     theme.css: P3RGQFIBWDMKXCUE64VAIWWMDAHY5QEI

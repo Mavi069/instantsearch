@@ -3,6 +3,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+startup: {type: form, module: Register}
 package_name: Instantsearch
 allow_embedding: false
 name: Instantsearch
@@ -10,11 +11,23 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
   server_spec: null}
 metadata: {title: InstantSearch, description: Discover Peope with their faces with our help,
   logo_img: 'https://i.pinimg.com/564x/28/d3/e9/28d3e91741f144e07f98e71030cb0505.jpg'}
-startup_form: Form1
+startup_form: null
 db_schema:
-  our_data:
+  ourdata:
     client: none
     server: full
-    columns: []
-    title: Our data
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 200}
+      type: simpleObject
+    - name: gmail
+      admin_ui: {order: 1.5, width: 200}
+      type: simpleObject
+    - name: username
+      admin_ui: {order: 2.25, width: 200}
+      type: simpleObject
+    - name: propic
+      admin_ui: {width: 200, order: 3.25}
+      type: simpleObject
+    title: ourdata
 renamed: true

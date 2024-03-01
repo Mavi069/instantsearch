@@ -45,7 +45,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'CLPMLF,SEVXTB'}
   - name: file_loader_1
-    properties: {}
+    properties: {role: outlined-button}
     type: FileLoader
     layout_properties: {grid_position: 'IMRJAN,AKSASC'}
   - name: button_1
