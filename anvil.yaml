@@ -29,5 +29,8 @@ db_schema:
     - name: propic
       admin_ui: {width: 200, order: 3}
       type: simpleObject
+    - name: encodings
+      admin_ui: {width: 200, order: 4}
+      type: simpleObject
     title: ourdata
 renamed: true

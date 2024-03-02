@@ -17,4 +17,4 @@ import anvil.server
 #
 @anvil.server.callable
 def submit(name, gmail, username, propic):
-  app_tables.ourdata.add_row(name=name, gmail=gmail, username=username, propic=propic)
+  app_tables.ourdata.add_row(name=name, gmail=gmail, username=username, propic=propic, encodings=encodings)

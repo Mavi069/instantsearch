@@ -4,6 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import face_recognition
 
 class Register(RegisterTemplate):
   def __init__(self, **properties):
@@ -11,11 +12,11 @@ class Register(RegisterTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-
-  def button_1_show(self, **event_args):
-    """This method is called when the Button is shown on the screen"""
-    pass
-
+  def load_and_encode(self, propic):
+    encodings = face_recognition.load_image_file(propic)
+    return face_recognition.face_encodings(encodings)
+    anvil.server.call('submit', encodings=encodings)
+  
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     name = self.text_box_1
